@@ -14,7 +14,10 @@ $(document).ready(function(){
         "pass": $(".pass").val()
       },
       function(data,status){
-          alert("Data: " + data + "\nStatus: " + status);
+        var data = JSON.parse(data);
+        for (var i = 0; i < data.length; i++) {
+          $(".list-group").append(data[i]);
+        }
       });
   });
 });
