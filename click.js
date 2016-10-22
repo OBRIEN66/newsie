@@ -7,7 +7,7 @@ $(document).ready(function(){
     $(".mail-content").hide();
     $(".message").show();
   });
-  $(".button").click(function(){
+  $(".sign-in").click(function(){
       $.post("http://newsie.club/data",
       {
         "user": $(".user").val(),
