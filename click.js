@@ -1,12 +1,4 @@
 $(document).ready(function(){
-  // $(".message").click(function(){
-  //   $(".message").hide();
-  //   $(".mail-content").show();
-  // });
-  // $(".done").click(function(){
-  //   $(".mail-content").hide();
-  //   $(".message").show();
-  // });
   $(".button").click(function(){
       $.post("http://newsie.club/data",
       {
@@ -22,7 +14,7 @@ $(document).ready(function(){
               ${data[i].title} <span class="sender">${data[i].sender}</span><span class="tag tag-primary tag-pill float-xs-right">${data[i].date}</span>
             </li>
           </a>`);
-          $(".total").add(`
+          $(".total").append(`
             <div id="${data[i].id}">
               <h3>${data[i].sender}</h3>
               <h4>${data[i].title}</h4>
