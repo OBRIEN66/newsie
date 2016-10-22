@@ -20,10 +20,13 @@
           The Newsie Club
         </a>
         <form class="form-inline float-xs-right">
-          <input class="form-control user" type="text" placeholder="johnny.appleseed">
-          <input class="form-control pass" type="password" placeholder="password">
-          <button class="button btn btn-outline-secondary" type="submit">Sign in</button>
-          <button class="button btn btn-outline-secondary" type="link" onclick="location.href = 'mailto:admin@newsie.club';">Register</button>
+          <span id="login-form" style="display: none;">
+            <input class="form-control user" type="text" placeholder="johnny.appleseed">
+            <input class="form-control pass" type="password" placeholder="password">
+          </span>
+          <button class="button btn btn-outline-secondary sign-in" type="submit" onmouseover="$('#login-form').show()">Sign in</button>
+          <button class="button btn btn-outline-secondary" type="button" onclick="location.href = 'mailto:admin@newsie.club';">Register</button>
+          <button class="button btn btn-outline-secondary" type="button" onclick="location.href = './about.html';">About</button>
         </form>
       </nav>
       <div class="container top">
