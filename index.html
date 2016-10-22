@@ -5,12 +5,41 @@
     <title>Newsie | Mail for humans</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <style media="screen">
+    .container{padding-top: 3em;}
+    .subject {
+      padding-left: 35%;
+      color: #AAADAD;
+    }
+    @media (max-width:500px;) {
+      .subject {
+        padding-left: 20%;
+        color: inherit;
+      }
+    }
+    </style>
   </head>
   <body>
+    <nav class="navbar navbar-light bg-faded">
+      <a class="navbar-brand" href="index.html">
+        Newsie
+      </a>
+    </nav>
     <div class="container">
-      <div class="jumbotron">
-        <h1>Welcome to Newsie!</h1>
-      </div>
+      <ul class="list-group">
+        <li class="list-group-item mail-item">
+          <span class="tag tag-primary tag-pill float-xs-right">dd/mm/yyyy</span>
+          <a href="#">Sample mail <span class="subject">subject</span></a>
+        </li>
+        <li class="list-group-item mail-item">
+          <span class="tag tag-primary tag-pill float-xs-right">dd/mm/yyyy</span>
+          <a href="#">Sample mail <span class="subject">subject</span></a>
+        </li>
+        <li class="list-group-item mail-item">
+          <span class="tag tag-primary tag-pill float-xs-right">dd/mm/yyyy</span>
+          <a href="#">Sample mail <span class="subject">subject</span></a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
