@@ -8,12 +8,10 @@ $(document).ready(function(){
     $(".message").show();
   });
   $(".button").click(function(){
-
-
       $.post("http://newsie.club/data",
       {
-        "name": $(".username").val(),
-        "password": $(".password").val()
+        "user": $(".user").val(),
+        "pass": $(".pass").val()
       },
       function(data,status){
           alert("Data: " + data + "\nStatus: " + status);
