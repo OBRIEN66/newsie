@@ -15,8 +15,10 @@ $(document).ready(function(){
       },
       function(data,status){
         var data = JSON.parse(data);
+        console.log(data);
         for (var i = 0; i < data.length; i++) {
-          $(".mail-content").append(data[i]);
+
+          console.log(data[i]);
         }
       });
   });
