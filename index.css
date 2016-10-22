@@ -1,9 +1,9 @@
 /*
 Override some bootstrap
 by: Nicholas O'Brien
-for: Newsie
+for: Newsie, the mail web app not the musical
 */
-
+.mail-content{display: none;}
 .top{padding-top: 6em;}
 .subject{color: #ADADAD; padding-left: 10%}
 /* Gets rid of underline becuase I don't like it*/
