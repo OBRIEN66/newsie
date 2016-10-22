@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $(".inbox-title").hide();
+  // $(".inbox-title").hide();
   $(".button").click(function(){
       $.post("http://newsie.club/data",
       {
@@ -7,8 +7,8 @@ $(document).ready(function(){
         "pass": $(".pass").val()
       },
       function(data,status){
-        $("#place-holder").remove();
-        $(".inbox-title").show();
+        // $("#place-holder").remove();
+        // $(".inbox-title").show();
         var data = JSON.parse(data);
         console.log(data);
         for (var i = 0; i < data.length; i++) {
