@@ -10,12 +10,15 @@ $(document).ready(function(){
         "user": $(".user").val(),
         "pass": $(".pass").val()
       },
+
       function(data,status){
         $("#place-holder").remove();
         $(".inbox-title").show();
+        $(".loading").show();
         var data = JSON.parse(data);
         console.log(data);
         for (var i = 0; i < data.length; i++) {
+          $(".loading").hide();
           $(".list-group").append(`<a onclick="showit(${data[i].id})" class="message" href="#">
             <li class="list-group-item mail-item">
               ${data[i].title} <span class="sender">${data[i].sender}</span><span class="tag tag-primary tag-pill float-xs-right">${data[i].date}</span>
