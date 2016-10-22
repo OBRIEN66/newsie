@@ -1,11 +1,3 @@
-// $(document).ready(function() {
-//   $(".message").click(function(event){
-//     event.preventDefault();
-//     $(this).hide();
-//     $(".mail-content").show();
-//   });
-// });
-
 $(document).ready(function(){
   $(".message").click(function(){
     $(".message").hide();
@@ -14,5 +6,17 @@ $(document).ready(function(){
   $(".done").click(function(){
     $(".mail-content").hide();
     $(".message").show();
+  });
+  $(".button").click(function(){
+
+
+      $.post("http://newsie.club/data",
+      {
+        "name": $(".username").val(),
+        "password": $(".password").val()
+      },
+      function(data,status){
+          alert("Data: " + data + "\nStatus: " + status);
+      });
   });
 });
