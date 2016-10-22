@@ -19,5 +19,6 @@ a {border-radius: 0px;}
 i.subject {padding-left: 0px;}
 
 .email-content {
+	padding-top: 8em;
 	display: none;
 }
