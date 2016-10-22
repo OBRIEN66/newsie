@@ -17,8 +17,7 @@ $(document).ready(function(){
         var data = JSON.parse(data);
         console.log(data);
         for (var i = 0; i < data.length; i++) {
-
-          console.log(data[i]);
+          $(".mail-content").add(data[i]);
         }
       });
   });
