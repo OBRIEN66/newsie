@@ -1,6 +1,17 @@
-.container{padding-top: 6em;}
+/*
+Override some bootstrap
+by: Nicholas O'Brien
+for: Newsie
+*/
+
+.top{padding-top: 6em;}
 .subject{color: #ADADAD; padding-left: 10%}
-a:{text-decoration: none;}
-a:hover{text-decoration: inherit;}
-a:visited{text-decoration: inherit;}
+/* Gets rid of underline becuase I don't like it*/
+
+a:link{text-decoration: none;}
+a:hover{text-decoration: none;}
+a:active{text-decoration: none;}
+a:visited{text-decoration: none;}
+
+/*Get rid of border radius?*/
 a {border-radius: 0px;}
