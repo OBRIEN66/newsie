@@ -10,6 +10,7 @@ function hideit(id) {
 
 $(document).ready(function(){
   $(".inbox-title").hide();
+  $(".email-content").hide();
   $(".loading").hide();
   $(".button").click(function(){
       $.post("http://newsie.club/data",
