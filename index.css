@@ -1,4 +1,6 @@
 .container{padding-top: 6em;}
 .subject{color: #ADADAD; padding-left: 10%}
-a:hover{text-decoration: none;}
+a:{text-decoration: none;}
+a:hover{text-decoration: inherit;}
+a:visited{text-decoration: inherit;}
 a {border-radius: 0px;}
