@@ -27,7 +27,7 @@ $(document).ready(function(){
         console.log(data);
         for (var i = 0; i < data.length; i++) {
           $(".loading").remove();
-          $(".list-group").append(`<a onclick="showit(${data[i].id})" class="message" href="#">
+          $(".list-group").append(`<a onclick="showit('#${data[i].id}')" class="message" href="#">
             <li class="list-group-item mail-item">
               ${data[i].title} <span class="sender">${data[i].sender}</span><span class="tag tag-primary tag-pill float-xs-right">${data[i].date}</span>
             </li>
@@ -40,9 +40,7 @@ $(document).ready(function(){
               <p>
                 ${data[i].body}
               </p>
-              </div>
-                <a class="done btn btn-primary" onclick="hideit(${data[i].id})">Done? Head home</a>
-              </div>
+              <a class="done btn btn-primary" onclick="hideit('#${data[i].id}')">Done? Head home</a>
             </div>
           `);
         }
