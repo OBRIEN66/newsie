@@ -1,3 +1,7 @@
+function showit(id) {
+  $(id).show();
+}
+
 $(document).ready(function(){
   $(".inbox-title").hide();
   $(".button").click(function(){
@@ -15,7 +19,7 @@ $(document).ready(function(){
         console.log(data);
         for (var i = 0; i < data.length; i++) {
           $(".loading").hide();
-          $(".list-group").append(`<a onclick="$("${data[i].id}").show(); $("message").hide();" class="message" href="#">
+          $(".list-group").append(`<a onclick="showit(${data[i].id})" class="message" href="#">
             <li class="list-group-item mail-item">
               ${data[i].title} <span class="sender">${data[i].sender}</span><span class="tag tag-primary tag-pill float-xs-right">${data[i].date}</span>
             </li>
@@ -30,7 +34,6 @@ $(document).ready(function(){
               </p>
             </div>
           `);
-
         }
       });
   });
