@@ -27,13 +27,12 @@ $(document).ready(function(){
         console.log(data);
         for (var i = 0; i < data.length; i++) {
           $(".loading").remove();
-          $(".list-group").append(`<a onclick="showit('#${data[i].id}')" class="message" href="#">
+          $(".list-group").append(`
             <tr class="list-group-item mail-item" style="width: 100%;">
-              <td>${data[i].title}<td>
+              <td><a onclick="showit('#${data[i].id}')" class="message">${data[i].title}</a><td>
               <td>${data[i].sender}</td>
               <td><span class="tag tag-primary tag-pill float-xs-right">${data[i].date}</span></td>
-            </tr>
-          </a>`);
+            </tr>`);
           $(".total").append(`
             <div id="${data[i].id}" class="email-content">
               <h3>${data[i].sender}</h3>
