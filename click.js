@@ -29,7 +29,11 @@ $(document).ready(function(){
           $(".loading").remove();
           $(".list-group").append(`<a onclick="showit('#${data[i].id}')" class="message" href="#">
             <li class="list-group-item mail-item">
-              ${data[i].title} <span class="sender">${data[i].sender}</span><span class="tag tag-primary tag-pill float-xs-right">${data[i].date}</span>
+            <tr>
+              <td>${data[i].title}<td>
+              <td>${data[i].sender}</td>
+              <td><span class="tag tag-primary tag-pill float-xs-right">${data[i].date}</span></td>
+            </tr>
             </li>
           </a>`);
           $(".total").append(`
