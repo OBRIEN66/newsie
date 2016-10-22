@@ -16,3 +16,5 @@ a:visited{text-decoration: none;}
 
 /*Get rid of border radius?*/
 a {border-radius: 0px;}
+
+i.subject {padding-left: 0px;}
