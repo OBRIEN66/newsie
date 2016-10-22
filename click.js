@@ -17,7 +17,11 @@ $(document).ready(function(){
         var data = JSON.parse(data);
         console.log(data);
         for (var i = 0; i < data.length; i++) {
-          $(".mail-content").add(data[i]);
+          $(".list-group").add(`<a class="message" href="#">
+            <li class="list-group-item mail-item">
+              ${data[i].title} <span class="subject">${data[i].subject}</span><span class="tag tag-primary tag-pill float-xs-right">${data[i].date}</span>
+            </li>
+          </a>`);
         }
       });
   });
