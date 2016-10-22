@@ -3,11 +3,12 @@ Override some bootstrap
 by: Nicholas O'Brien
 for: Newsie, the mail web app not the musical
 */
+/*Basic stuff that I need*/
 .mail-content{display: none;}
 .top{padding-top: 6em;}
 .subject{color: #ADADAD; padding-left: 10%}
-/* Gets rid of underline becuase I don't like it*/
 
+/* Gets rid of underline becuase I don't like it*/
 a:link{text-decoration: none;}
 a:hover{text-decoration: none;}
 a:active{text-decoration: none;}
