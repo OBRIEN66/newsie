@@ -1,5 +1,5 @@
 function showit(id) {
-  $(id).show(); $("message").hide();
+  $(id).show();
 }
 
 $(document).ready(function(){
