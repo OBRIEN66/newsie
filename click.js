@@ -22,6 +22,11 @@ $(document).ready(function(){
               ${data[i].title} <span class="subject">${data[i].subject}</span><span class="tag tag-primary tag-pill float-xs-right">${data[i].date}</span>
             </li>
           </a>`);
+          console.log(`<a class="message" href="#">
+            <li class="list-group-item mail-item">
+              ${data[i].title} <span class="subject">${data[i].subject}</span><span class="tag tag-primary tag-pill float-xs-right">${data[i].date}</span>
+            </li>
+          </a>`);
         }
       });
   });
